@@ -4,10 +4,71 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Parcel Boilerplate template</title>
+    <title>Shooting Game</title>
+
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <div id="app"></div>
+    <div id="app">
+      <main class="wrapper">
+        <div class="container">
+          <div class="game">
+            <div class="game__scoreboard" id="scoreBoard">
+              <div class="game__player" id="playerOneScoreBoard">
+                <h4 class="game__player--title">Player 1</h4>
+                <p class="game__player--score" id="playerOneScore">0</p>
+                <span class="game__player--winning" id="winningPlayerOne"
+                  >Total winning round 0</span
+                >
+              </div>
+
+              <div class="game__player" id="playerTwoScoreBoard">
+                <h4 class="game__player--title">Player 2</h4>
+                <p class="game__player--score" id="playerTwoScore">0</p>
+                <span class="game__player--winning" id="winningPlayerTwo"
+                  >Total winning round 0</span
+                >
+              </div>
+            </div>
+
+            <div class="game__round">
+              <h4 id="round">Round 1</h4>
+            </div>
+
+            <div class="game__container">
+              <div class="game__character" id="playerOne">
+                <img
+                  src="../src/img/playerOne.png"
+                  alt="playerOne"
+                  width="280px"
+                />
+                <span class="game__bullet--one" id="playerOneBullet"></span>
+              </div>
+
+              <div class="game__character" id="playerTwo">
+                <img
+                  src="../src/img/playerTwo.png"
+                  alt="playerTwo"
+                  width="200px"
+                />
+                <span class="game__bullet--two" id="playerTwoBullet"></span>
+              </div>
+            </div>
+
+            <div class="game__controllers">
+              <button class="control" id="start">Start</button>
+              <button class="control" id="reset">Reset</button>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
     <script src="../src/index.js"></script>
   </body>
 </html>

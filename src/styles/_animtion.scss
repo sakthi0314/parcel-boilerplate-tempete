@@ -1,0 +1,45 @@
+// fire for playerOne
+@keyframes forplayerOne {
+  0% {
+    left: 36%;
+    opacity: 0;
+  }
+
+  25% {
+    left: 75%;
+    opacity: 0.5;
+  }
+
+  50% {
+    left: 116%;
+    opacity: 1;
+  }
+
+  100% {
+    left: 36%;
+    opacity: 0;
+  }
+}
+
+// fire for playerOne
+@keyframes forplayerTwo {
+  0% {
+    left: 34%;
+    opacity: 0;
+  }
+
+  25% {
+    left: 75%;
+    opacity: 0.5;
+  }
+
+  50% {
+    left: 116%;
+    opacity: 1;
+  }
+
+  100% {
+    left: 34%;
+    opacity: 0;
+  }
+}
